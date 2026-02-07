@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="よるのおはなしワークの安心サポート。役割としてのコミュニケーション術、プライバシー保護、セーフティネットの構築方法をお伝えします。">
+    <title>安心サポート | よるのおはなしワーク</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">よるのおはなしワーク</a>
+            <nav class="nav" id="nav">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html" class="active">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">MENTAL PROTECTION</span>
+                <h1 class="section-title">あなたの心を守るために</h1>
+                <p class="section-subtitle">安心して活動するための知識とスキルをお伝えします</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communication Skills -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎭 役割としてのコミュニケーション術</h2>
+                <p class="section-subtitle">感情を消耗させないための対人スキル</p>
+            </div>
+
+            <div class="content-grid">
+                <div class="glass-card content-card">
+                    <span class="content-card-number">1</span>
+                    <h3 class="content-card-title">ペルソナの構築</h3>
+                    <p>
+                        仕事用の「キャラクター」を意識的に作ることで、本当の自分を守ります。
+                        演じることは自己防衛の正当な手段です。
+                    </p>
+                </div>
+
+                <div class="glass-card content-card">
+                    <span class="content-card-number">2</span>
+                    <h3 class="content-card-title">感情の切り分け</h3>
+                    <p>
+                        相手の感情に巻き込まれない技術。
+                        「共感的傾聴」をしつつも、自分の心の境界線を保つ方法をお伝えします。
+                    </p>
+                </div>
+
+                <div class="glass-card content-card">
+                    <span class="content-card-number">3</span>
+                    <h3 class="content-card-title">終業後のリセット</h3>
+                    <p>
+                        仕事モードからプライベートへの切り替えルーティン。
+                        シャワー、着替え、決まった動作で心のスイッチを切ります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safety Guidelines -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🔒 セーフティネットの構築</h2>
+                <p class="section-subtitle">プライバシー保護と安全管理のガイドライン</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>個人情報の保護</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 1.5rem;">
+                                    <li style="margin-bottom: 0.5rem;">本名、住所、勤務先などの個人を特定できる情報は絶対に共有しない</li>
+                                    <li style="margin-bottom: 0.5rem;">活動用の名前（ハンドルネーム）を使用する</li>
+                                    <li style="margin-bottom: 0.5rem;">SNSアカウントは活動用と個人用を完全に分離</li>
+                                    <li style="margin-bottom: 0.5rem;">位置情報がわかる写真の共有を避ける</li>
+                                    <li>定期的にプライバシー設定を確認する</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>心理的安全の確保</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 1.5rem;">
+                                    <li style="margin-bottom: 0.5rem;">無理な要求には「できません」と言う練習をする</li>
+                                    <li style="margin-bottom: 0.5rem;">不快なクライアントは適切にブロック・報告する</li>
+                                    <li style="margin-bottom: 0.5rem;">困ったときの相談先を事前に確保しておく</li>
+                                    <li style="margin-bottom: 0.5rem;">定期的な休息日を必ず設ける</li>
+                                    <li>心身の不調を感じたら無理せず休む</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>経済的な安全管理</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 1.5rem;">
+                                    <li style="margin-bottom: 0.5rem;">収入を記録し、確定申告の準備をする</li>
+                                    <li style="margin-bottom: 0.5rem;">収入の一部は必ず貯蓄に回す</li>
+                                    <li style="margin-bottom: 0.5rem;">この仕事だけに依存しない収入源の分散を意識</li>
+                                    <li style="margin-bottom: 0.5rem;">怪しい「高収入保証」の誘いには乗らない</li>
+                                    <li>金銭トラブルの相談窓口を把握しておく</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>緊急時の対応</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <ul style="list-style: disc; padding-left: 1.5rem;">
+                                    <li style="margin-bottom: 0.5rem;"><strong>ストーキング被害</strong>　警察への相談、証拠の保存</li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>脅迫・恐喝</strong>　即座に運営に報告、警察へ相談</li>
+                                    <li style="margin-bottom: 0.5rem;">
+                                        <strong>精神的に辛いとき</strong>　よりそいホットライン（0120-279-338）
+                                    </li>
+                                    <li style="margin-bottom: 0.5rem;"><strong>法的トラブル</strong>　法テラス（0570-078374）に相談</li>
+                                    <li>一人で抱え込まず、必ず誰かに相談する</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Self-Care Tips -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">💆 セルフケアのヒント</h2>
+                <p class="section-subtitle">持続可能なペースで活動するために</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🌿</div>
+                    <h3 class="feature-title">リラックスルーティン</h3>
+                    <p>活動前後に5分間の深呼吸やストレッチを。心と体をほぐすことで、余裕を持って臨めます。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">📓</div>
+                    <h3 class="feature-title">感情の記録</h3>
+                    <p>日々の気持ちを簡単にメモ。パターンを知ることで、自分に合った働き方が見えてきます。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">小さな目標設定</h3>
+                    <p>大きな目標は細かく分割。一つずつ達成する喜びが、モチベーションを支えます。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🏖️</div>
+                    <h3 class="feature-title">計画的な休息</h3>
+                    <p>「頑張った自分へのご褒美」として休息を計画。罪悪感なく休むことも大切なスキルです。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3 class="feature-title">安全な繋がり</h3>
+                    <p>同じ活動をしている仲間との交流。悩みを共有できる場所があると心強いです。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🚪</div>
+                    <h3 class="feature-title">いつでも離れられる</h3>
+                    <p>辞めたくなったら辞めていい。この選択肢を常に持っておくことが、心の安全網になります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="glass-card text-center" style="max-width: 700px; margin: 0 auto;">
+                <h2 class="mb-md">準備ができたら</h2>
+                <p class="mb-lg">安心できる環境で、自分のペースで始めましょう</p>
+                <a href="start.html" class="btn btn-primary">はじめ方を見る</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo">よるのおはなしワーク</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 よるのおはなしワーク. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Stars Animation
+        function createStars() {
+            const container = document.getElementById('stars');
+            const starCount = 100;
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(star);
+            }
+        }
+        createStars();
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+        // Accordion Toggle
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            item.classList.toggle('open');
+        }
+    </script>
+</body>
+
+</html>

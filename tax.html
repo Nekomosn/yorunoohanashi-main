@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="確定申告ガイド - よるのおはなしワークで稼いだお金を守るための完全ガイド。バレない方法、経費の計上、申告の流れを解説。">
+    <title>税金について | よるのおはなしワーク</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">よるのおはなしワーク</a>
+            <nav class="nav" id="nav">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html" class="active">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">TAX GUIDE</span>
+                <h1 class="section-title">ガチで損しないための確定申告ガイド</h1>
+                <p class="section-subtitle">稼いだ大切なお金を守るために</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <p class="mb-md">
+                    難しい言葉は抜きにして、私たちが一番気になる<strong class="text-gold">3つのポイント</strong>に絞ってまとめました。
+                </p>
+                <div class="features-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem;">💰</div>
+                        <p style="font-size: 0.9rem;">いくらから必要？</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem;">🔒</div>
+                        <p style="font-size: 0.9rem;">親や会社にバレない？</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem;">
+                        <div style="font-size: 2rem;">✨</div>
+                        <p style="font-size: 0.9rem;">手元に残るお金を増やすには？</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Do I need to file? -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">STEP 1</span>
+                <h2 class="section-title">そもそも、私は確定申告が必要？</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <p class="mb-lg">
+                    結論から言うと、<strong class="text-gold">「1年間の利益（稼いだ額 − 経費）」</strong>が以下のラインを超えたら申告が必要です。
+                </p>
+
+                <table class="checklist-table mb-lg">
+                    <thead>
+                        <tr>
+                            <th>あなたの状況</th>
+                            <th>申告が必要なライン</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>会社員・学生の副業</strong></td>
+                            <td>年間の利益が <strong class="text-gold">20万円</strong> を超えたら</td>
+                        </tr>
+                        <tr>
+                            <td><strong>本業としてガッツリ</strong></td>
+                            <td>年間の利益が <strong class="text-gold">48万円</strong>（基礎控除）を超えたら</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div
+                    style="background: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--color-champagne-gold); padding: 1rem; border-radius: 8px;">
+                    <strong class="text-gold">⚠️ 注意：</strong><br>
+                    「振込金額」じゃなくて、そこから「仕事で使ったお金（経費）」を引いた残りが20万円を超えたら、というルールです。
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: How to avoid getting caught -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">STEP 2 【最重要】</span>
+                <h2 class="section-title">会社や親に「絶対バレたくない」人へ</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <p class="mb-lg">
+                    副業がバレる一番の原因は、実は<strong class="text-pink">「住民税」</strong>の通知です。<br>
+                    これを防ぐための<strong class="text-gold">「魔法の手順」</strong>を覚えておいてください。
+                </p>
+
+                <h3 class="text-gold mb-md">🪄 確定申告書を書く時の「神チェック」</h3>
+
+                <div
+                    style="background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.15)); border: 2px solid var(--color-champagne-gold); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; text-align: center;">
+                    <p class="mb-md">申告書の第2表にある<strong>「住民税に関する事項」</strong>という欄で...</p>
+                    <div
+                        style="font-size: 1.5rem; padding: 1rem; background: var(--color-midnight-blue); border-radius: 12px; display: inline-block;">
+                        <strong class="text-gold">「自分で納付（普通徴収）」</strong><br>
+                        <span style="font-size: 2rem;">に丸をつける！</span>
+                    </div>
+                </div>
+
+                <p>
+                    これだけで、ワーク分の住民税の請求書が<strong class="text-pink">自宅に直接届く</strong>ようになります。<br>
+                    会社に通知がいかないので、<strong>「住民税の額が急に増えて副業が疑われる」というリスクを回避</strong>できます。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Expenses -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">STEP 3</span>
+                <h2 class="section-title">「経費」を制するものが、手残りを制する</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <p class="mb-lg">
+                    税金は「利益」に対してかかります。つまり、<strong class="text-gold">「経費」をちゃんと計上すれば、払う税金は安くなり、手元に残るお金が増える</strong>ということ。
+                </p>
+
+                <h3 class="text-pink mb-md">✨ これ、全部「経費」にできる可能性があります</h3>
+
+                <div class="features-grid mb-lg"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div
+                        style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px; border: 1px solid rgba(212, 165, 165, 0.3);">
+                        <strong>💄 美容代</strong>
+                        <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">コスメ、カラコン、美容院代、ネイル</p>
+                    </div>
+                    <div
+                        style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px; border: 1px solid rgba(212, 165, 165, 0.3);">
+                        <strong>👗 衣装代</strong>
+                        <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">画面映えのための服、ルームウェア、ウィッグ</p>
+                    </div>
+                    <div
+                        style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px; border: 1px solid rgba(212, 165, 165, 0.3);">
+                        <strong>📱 機材代</strong>
+                        <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">スマホ代（一部）、リングライト、三脚、背景布</p>
+                    </div>
+                    <div
+                        style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px; border: 1px solid rgba(212, 165, 165, 0.3);">
+                        <strong>🏠 家賃・光熱費</strong>
+                        <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">お仕事部屋の面積分、稼働中の電気代（家事按分）</p>
+                    </div>
+                    <div
+                        style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px; border: 1px solid rgba(212, 165, 165, 0.3);">
+                        <strong>📶 通信費</strong>
+                        <p style="font-size: 0.9rem; opacity: 0.9; margin-top: 0.5rem;">Wi-Fi代、スマホ通信料（一部）</p>
+                    </div>
+                </div>
+
+                <div
+                    style="background: rgba(212, 175, 55, 0.1); border-left: 3px solid var(--color-champagne-gold); padding: 1rem; border-radius: 8px;">
+                    <strong class="text-gold">📝 鉄則：</strong><br>
+                    領収書やレシートは、今日から全部一か所にまとめておいてください。スマホの購入履歴のスクリーンショットでもOK。<strong
+                        class="text-pink">「証明できるもの」がないと経費にできません。</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expense Diagnosis -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">EXPENSE CHECK</span>
+                <h2 class="section-title">経費にできる？できない？○×診断</h2>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <table class="checklist-table">
+                    <thead>
+                        <tr>
+                            <th>支出アイテム</th>
+                            <th>判定</th>
+                            <th>理由</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>リングライト・Webカメラ</td>
+                            <td><span class="text-gold" style="font-size: 1.5rem;">○</span></td>
+                            <td>ワークの品質向上に直結する「備品」です。</td>
+                        </tr>
+                        <tr>
+                            <td>ワーク用の衣装・ウィッグ</td>
+                            <td><span class="text-gold" style="font-size: 1.5rem;">○</span></td>
+                            <td>普段着と分けることで「衣装費」として認められます。</td>
+                        </tr>
+                        <tr>
+                            <td>仕事中に使うコスメ・カラコン</td>
+                            <td><span class="text-gold" style="font-size: 1.5rem;">○</span></td>
+                            <td>ワーク用の「消耗品」。画面映えのための投資です。</td>
+                        </tr>
+                        <tr>
+                            <td>スマホ代・Wi-Fi代</td>
+                            <td><span class="text-pink" style="font-size: 1.5rem;">△</span></td>
+                            <td>ワークで使った時間分だけ「家事按分」として計上可能。</td>
+                        </tr>
+                        <tr>
+                            <td>カフェ代（一人で休憩）</td>
+                            <td><span style="opacity: 0.5; font-size: 1.5rem;">×</span></td>
+                            <td>プライベートな飲食は不可。ただし打ち合わせなら○。</td>
+                        </tr>
+                        <tr>
+                            <td>普段使いの基礎化粧品</td>
+                            <td><span style="opacity: 0.5; font-size: 1.5rem;">×</span></td>
+                            <td>日常のケア（身だしなみ）は経費になりにくいです。</td>
+                        </tr>
+                        <tr>
+                            <td>お部屋の家賃（一部）</td>
+                            <td><span class="text-gold" style="font-size: 1.5rem;">○</span></td>
+                            <td>ワーク部屋の面積分を「地代家賃」として計上。</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expense Simulator -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">SIMULATOR</span>
+                <h2 class="section-title">💰 簡易経費シミュレーター</h2>
+                <p class="section-subtitle">金額を入力して、あなたの経費予想額を計算</p>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <div id="expenseInputs">
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">リングライト</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥3,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">Webカメラ</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥5,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">衣装代（年間）</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥24,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">コスメ・カラコン（年間）</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥36,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">通信費（年間按分）</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥30,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row"
+                        style="display: flex; align-items: center; padding: 0.75rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); gap: 1rem;">
+                        <span style="flex: 1;">家賃按分（年間）</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥60,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                    <div class="expense-row" style="display: flex; align-items: center; padding: 0.75rem 0; gap: 1rem;">
+                        <span style="flex: 1;">電気代按分（年間）</span>
+                        <span style="font-size: 0.8rem; opacity: 0.6;">金額例 ¥12,000</span>
+                        <span style="color: var(--color-champagne-gold);">¥</span>
+                        <input type="number" class="expense-input" value="0" min="0"
+                            style="width: 100px; padding: 0.5rem; border: 1px solid rgba(212, 175, 55, 0.5); border-radius: 8px; background: rgba(255,255,255,0.1); color: var(--color-soft-white); text-align: right;">
+                    </div>
+                </div>
+
+                <div
+                    style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.15)); border-radius: 12px; text-align: center;">
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">あなたの経費予想額</p>
+                    <div id="expenseTotal" style="font-size: 2.5rem; font-weight: bold;" class="text-gold">¥0</div>
+                    <p id="taxSaving" style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">SCHEDULE</span>
+                <h2 class="section-title">確定申告のスケジュールと流れ</h2>
+                <p class="section-subtitle">「後でいっか」は、2月に後悔します。</p>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="timeline-step">STEP 1</span>
+                        <h3 class="timeline-title">証拠を確保する（今すぐ開始）</h3>
+                        <p>
+                            <strong class="text-gold">売上の記録：</strong> 各サイトの報酬画面のスクリーンショットを月ごとに保存。<br>
+                            <strong class="text-pink">領収書の保管：</strong> レシートはすべて専用の封筒やファイルに放り込んでおく。<br>
+                            1円でも仕事に関係あるものは捨てない。
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-step">STEP 2</span>
+                        <h3 class="timeline-title">利益を計算する（1月〜2月）</h3>
+                        <p>
+                            <strong>計算式：</strong> 売上（総報酬額） － 経費（ライト代、通信費など） ＝ 利益<br>
+                            この「利益」が<strong class="text-gold">20万円を超えているか</strong>チェック。
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-step">STEP 3</span>
+                        <h3 class="timeline-title">確定申告書の作成（2月〜3月）</h3>
+                        <p>
+                            国税庁の「確定申告書等作成コーナー」にアクセス。<br>
+                            <strong class="text-pink">スマホとマイナンバーカードがあれば自宅で完結</strong>します。
+                        </p>
+                    </div>
+
+                    <div class="timeline-item" style="border-color: var(--color-champagne-gold);">
+                        <span class="timeline-step" style="color: var(--color-champagne-gold);">STEP 4【最重要】</span>
+                        <h3 class="timeline-title">バレ防止の設定</h3>
+                        <p>
+                            住民税の納付方法を選択する欄で、必ず<strong class="text-gold">「自分で納付（普通徴収）」</strong>を選択。<br>
+                            ※これを行わないと、副業分の住民税の通知が本業の会社に行き、副業が発覚します。
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <span class="timeline-step">STEP 5</span>
+                        <h3 class="timeline-title">納税・還付</h3>
+                        <p>
+                            計算された所得税を支払う（振替納税が楽です）。<br>
+                            逆に、源泉徴収されていた場合は、<strong class="text-gold">多く払いすぎた分が口座に振り込まれます。</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">よくある不安への回答</h2>
+            </div>
+
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>申告しなかったらどうなる？</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                「無申告加算税」や「延滞税」というペナルティがついて、本来払うべき額よりずっと高いお金を国に持っていかれます。ぶっちゃけ、<strong
+                                    class="text-pink">払うより隠すほうがリスク高いし、損だよ。</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                            <h3>会社に「確定申告して」って言われる？</h3>
+                            <span class="accordion-icon">+</span>
+                        </div>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                基本的には何も言われません。個人で申告するものなので、会社に「副業の確定申告します」みたいに報告する必要もありません。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accounting Tools -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">TOOLS</span>
+                <h2 class="section-title">🛠️ それでもめんどくさいときの確定申告ツール</h2>
+                <p class="section-subtitle">自力でやる自信がないなら、サクッとツールに頼ろう</p>
+            </div>
+
+            <div class="glass-card" style="max-width: 1000px; margin: 0 auto;">
+                <table class="checklist-table">
+                    <thead>
+                        <tr>
+                            <th>サービス名</th>
+                            <th>特徴</th>
+                            <th>向いている人</th>
+                            <th>導入のしやすさ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong class="text-pink">freee会計</strong></td>
+                            <td>知識不要。家計簿感覚で入力できる。</td>
+                            <td>知識ゼロから最短で終わらせたい人</td>
+                            <td><span class="text-gold">★★★★★</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-pink">マネーフォワード クラウド</strong></td>
+                            <td>自由度が高い。マメな人向け。</td>
+                            <td>複数の副業を管理し、数字を細かく見たい人</td>
+                            <td><span class="text-gold">★★★★☆</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong class="text-pink">やよいの青色申告 オンライン</strong></td>
+                            <td>老舗の安心感。初年度無料キャンペーンが強力。</td>
+                            <td>コストを極限まで抑えて始めたい人</td>
+                            <td><span class="text-gold">★★★★☆</span></td>
+                        </tr>
+                        <tr style="background: rgba(212, 175, 55, 0.1);">
+                            <td><strong class="text-gold">Taxnap（タックスナップ）</strong></td>
+                            <td>スワイプで仕訳完了。スマホだけでe-Taxまで完結。</td>
+                            <td>PC持ってない・会計ソフト嫌いな人</td>
+                            <td><span class="text-gold">★★★★★</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Taxnap Highlight -->
+            <div class="glass-card"
+                style="max-width: 1000px; margin: 2rem auto 0; border: 2px solid var(--color-champagne-gold);">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                    <span style="font-size: 2rem;">📱</span>
+                    <h3 class="text-gold" style="margin: 0;">Taxnap が今キテる理由</h3>
+                </div>
+                <p class="mb-md" style="opacity: 0.9;">
+                    フリーランスやギグワーカー（チャトレ、配達員等）の間で急速に普及しているアプリです。
+                </p>
+                <div class="features-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                    <div style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px;">
+                        <strong class="text-pink">👆 スワイプ仕訳</strong>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">銀行連携した明細を、Tinderのように右（経費）か左（私用）にスワイプするだけで仕訳が完了
+                        </p>
+                    </div>
+                    <div style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px;">
+                        <strong class="text-pink">📲 スマホ完結</strong>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">PCを一度も開かずにe-Taxまで繋げられる。PC持ってない子でも大丈夫</p>
+                    </div>
+                    <div style="background: rgba(212, 165, 165, 0.1); padding: 1rem; border-radius: 12px;">
+                        <strong class="text-pink">🎮 ゲーム感覚の画面</strong>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">「会計ソフト」じゃなくて「SNS/ゲーム」に近い画面だから、難しくなくて簡単</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary & CTA -->
+    <section class="section">
+        <div class="container">
+            <div class="glass-card text-center"
+                style="max-width: 1000px; margin: 0 auto; background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.1));">
+                <h2 class="mb-md">賢く稼いで、賢く守ろう</h2>
+                <p class="mb-lg">
+                    『よるのおはなしワーク』は、自分の時間を切り売りして手に入れた貴重な資金です。<br>
+                    税金の知識をちょっとつけるだけで、<strong class="text-gold">「バレる恐怖」から解放されて、堂々と、かつ最大効率でお金を手元に残せる</strong>ようになります。
+                </p>
+
+                <!-- Jewel CTA -->
+                <div
+                    style="background: rgba(212, 175, 55, 0.1); border: 2px solid var(--color-champagne-gold); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; text-align: left; position: relative;">
+                    <div
+                        style="position: absolute; top: -10px; left: 20px; background: var(--color-champagne-gold); color: var(--color-midnight-blue-dark); padding: 0.25rem 0.75rem; font-size: 0.75rem; font-weight: bold; border-radius: 4px;">
+                        💎 高単価案件</div>
+                    <p class="mb-md" style="margin-top: 0.5rem;">
+                        高単価（15,000円）の<strong class="text-pink">ジュエル</strong>なら、数回の稼働で確定申告のライン（20万円）に届く可能性があります。<br>
+                        だからこそ、今のうちから準備が必要です。
+                    </p>
+                    <a href="index.html#diagnosis" class="btn btn-primary" style="width: 100%;">適性診断で自分に合う稼ぎ方を見つける</a>
+                </div>
+
+                <p style="font-size: 0.8rem; opacity: 0.7; margin-top: 1.5rem;">
+                    ※個別の事案については税務署や税理士にご相談ください。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo">よるのおはなしワーク</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 よるのおはなしワーク. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Stars Animation
+        function createStars() {
+            const container = document.getElementById('stars');
+            const starCount = 100;
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(star);
+            }
+        }
+        createStars();
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+        // Accordion Toggle
+        function toggleAccordion(header) {
+            const item = header.parentElement;
+            item.classList.toggle('open');
+        }
+
+        // Expense Simulator
+        const expenseInputs = document.querySelectorAll('.expense-input');
+        const totalDisplay = document.getElementById('expenseTotal');
+        const taxSavingDisplay = document.getElementById('taxSaving');
+
+        function updateTotal() {
+            let total = 0;
+            expenseInputs.forEach(input => {
+                const value = parseInt(input.value) || 0;
+                total += value;
+            });
+            totalDisplay.textContent = '¥' + total.toLocaleString();
+
+            if (total > 0) {
+                const taxSaving = Math.floor(total * 0.15);
+                taxSavingDisplay.textContent = `これだけ経費にできれば、約 ¥${taxSaving.toLocaleString()} の節税になる可能性があります`;
+            } else {
+                taxSavingDisplay.textContent = '';
+            }
+        }
+
+        expenseInputs.forEach(input => {
+            input.addEventListener('input', updateTotal);
+        });
+    </script>
+</body>
+
+</html>

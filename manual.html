@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="よるのおはなしワーク稼働マニュアル。場所選びから会話テクニック、セルフケアまで、効率よく安全に稼ぐためのコツを解説。">
+    <title>稼働マニュアル | よるのおはなしワーク</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .manual-step {
+            margin-bottom: var(--space-xxl);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .step-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-dusty-pink), var(--color-champagne-gold));
+            border-radius: var(--radius-full);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-midnight-blue-dark);
+            flex-shrink: 0;
+        }
+
+        .step-meta {
+            flex: 1;
+        }
+
+        .step-title {
+            color: var(--color-dusty-pink);
+            margin-bottom: 0.25rem;
+        }
+
+        .step-goal {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: rgba(212, 175, 55, 0.15);
+            border: 1px solid var(--color-champagne-gold);
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            color: var(--color-champagne-gold);
+        }
+
+        .check-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: var(--space-lg) 0;
+        }
+
+        .check-table th,
+        .check-table td {
+            padding: var(--space-md);
+            text-align: left;
+            border-bottom: 1px solid var(--color-glass-border);
+        }
+
+        .check-table th {
+            background: rgba(212, 165, 165, 0.15);
+            color: var(--color-dusty-pink);
+            font-weight: 500;
+        }
+
+        .check-table tr:hover td {
+            background: rgba(212, 165, 165, 0.05);
+        }
+
+        .tip-card {
+            display: flex;
+            gap: var(--space-md);
+            padding: var(--space-lg);
+            margin-bottom: var(--space-md);
+            background: var(--color-glass-bg);
+            border: 1px solid var(--color-glass-border);
+            border-radius: var(--radius-md);
+            transition: var(--transition-normal);
+        }
+
+        .tip-card:hover {
+            border-color: var(--color-dusty-pink);
+            transform: translateX(5px);
+        }
+
+        .tip-icon {
+            font-size: 2rem;
+            flex-shrink: 0;
+        }
+
+        .tip-content h4 {
+            color: var(--color-champagne-gold);
+            margin-bottom: 0.5rem;
+        }
+
+        .technique-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin: var(--space-lg) 0;
+        }
+
+        .technique-card {
+            padding: var(--space-lg);
+            background: var(--color-glass-bg);
+            border: 1px solid var(--color-glass-border);
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .technique-card h4 {
+            color: var(--color-dusty-pink);
+            margin: var(--space-sm) 0;
+        }
+
+        .daily-check {
+            background: linear-gradient(135deg, rgba(212, 165, 165, 0.15), rgba(212, 175, 55, 0.1));
+            border: 1px solid var(--color-dusty-pink);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            margin-top: var(--space-xl);
+        }
+
+        .daily-check h3 {
+            text-align: center;
+            color: var(--color-dusty-pink);
+            margin-bottom: var(--space-lg);
+        }
+
+        .check-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: var(--transition-fast);
+        }
+
+        .check-item:last-child {
+            border-bottom: none;
+        }
+
+        .check-item:hover {
+            padding-left: var(--space-sm);
+        }
+
+        .check-box {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--color-dusty-pink);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition-fast);
+        }
+
+        .check-item.checked .check-box {
+            background: var(--color-dusty-pink);
+        }
+
+        .check-item.checked .check-box::after {
+            content: '✓';
+            color: var(--color-midnight-blue-dark);
+            font-weight: bold;
+        }
+
+        .final-message {
+            text-align: center;
+            padding: var(--space-xl);
+            background: var(--color-glass-bg);
+            border: 2px solid var(--color-champagne-gold);
+            border-radius: var(--radius-lg);
+            margin-top: var(--space-xl);
+        }
+
+        .final-message h3 {
+            color: var(--color-champagne-gold);
+            margin-bottom: var(--space-md);
+        }
+
+        @media (max-width: 768px) {
+            .check-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .step-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">よるのおはなしワーク</a>
+            <nav class="nav" id="nav">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html" class="active">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="section" style="padding-top: 120px;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">OPERATION MANUAL</span>
+                <h1 class="section-title">稼働マニュアル</h1>
+                <p class="section-subtitle">効率よく、安全に、自分を大切にしながら</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manual Content -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container" style="max-width: 900px;">
+
+            <!-- Step 1 -->
+            <div class="manual-step">
+                <div class="step-header">
+                    <div class="step-number">1</div>
+                    <div class="step-meta">
+                        <h2 class="step-title">どこで「おはなし」するか決める</h2>
+                        <span class="step-goal">🎯 最短でお小遣いをゲットして、面倒ごととさよなら</span>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <p class="mb-lg">
+                        なんとなく登録しちゃダメ。<br>
+                        自分の「時間」と「女の子としての魅力」を、どこに預けるのが一番お得か、サクッと選んじゃおう。
+                    </p>
+
+                    <table class="check-table">
+                        <thead>
+                            <tr>
+                                <th>チェックポイント</th>
+                                <th>つまりどういうこと？</th>
+                                <th>これでどうなるの？</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong class="text-pink">人がたくさんいる？</strong></td>
+                                <td>待機画面でただ待ってる時間、もったいなくない？</td>
+                                <td>無駄な「待ち時間（ただ働き）」が減らせる</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-pink">お金のシステムはシンプル？</strong></td>
+                                <td>結局、わたしの手元にいくら入るの？</td>
+                                <td>「働いたのに稼げなかった」を防げる</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-pink">ちゃんと守ってくれる？</strong></td>
+                                <td>ブロック機能はしっかりしてる？運営は相談に乗ってくれる？</td>
+                                <td>変な人に心をすり減らされない</td>
+                            </tr>
+                            <tr>
+                                <td><strong class="text-pink">お金はすぐにもらえる？</strong></td>
+                                <td>振り込み日と振込先は？</td>
+                                <td>「今すぐ欲しい！」にきちんと応えられる</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="manual-step">
+                <div class="step-header">
+                    <div class="step-number">2</div>
+                    <div class="step-meta">
+                        <h2 class="step-title">夜の「わたし」に変身</h2>
+                        <span class="step-goal">🎯 画面の中だけの「完璧な女の子」でいる</span>
+                    </div>
+                </div>
+
+                <div class="glass-card mb-lg">
+                    <p>
+                        ログインボタンは、いつもの自分をちょっと脱いで、<strong class="text-gold">「お仕事モードのキャラ」に変身する合図</strong>。<br>
+                        本当の自分を全部見せる必要なんてないから。
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">💡</div>
+                    <div class="tip-content">
+                        <h4>光は最高のメイク</h4>
+                        <p>照明は斜め前からが基本。暖かみのあるライトで、自分がきれいに見えるように。可愛く映るのは「エチケット」じゃなくて、自分を丁寧に扱うための<strong>「テクニック」</strong>だよ。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">🏠</div>
+                    <div class="tip-content">
+                        <h4>背景はシンプルに、でもオシャレに</h4>
+                        <p>生活感（脱ぎ捨てた服とか）は絶対に見せない。無地の壁や、おしゃれな間接照明だけで十分。「ここに来ると安心できる」って感じさせられると完璧。</p>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">🎭</div>
+                    <div class="tip-content">
+                        <h4>「理想の相手」でいるだけでいい</h4>
+                        <p>ありのままの自分を見せなくてOK。「癒やし担当」「話を聞くのが上手な子」「秘密を守れる人」……相手が求めてるキャラを演じるのが、一番ラクな方法だよ。</p>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">⏰</div>
+                    <div class="tip-content">
+                        <h4>ゴールデンタイムを狙ってサクッと</h4>
+                        <p><strong class="text-pink">21時〜深夜2時</strong>ぐらいが人が多い時間帯。その時間だけパッとログインして、短時間で目標金額をゲットしちゃおう。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="manual-step">
+                <div class="step-header">
+                    <div class="step-number">3</div>
+                    <div class="step-meta">
+                        <h2 class="step-title">省エネでおはなしを続ける</h2>
+                        <span class="step-goal">🎯 自分はラク。でも相手は「もっと話したい」って思っちゃう会話テク</span>
+                    </div>
+                </div>
+
+                <div class="glass-card mb-lg">
+                    <p>
+                        自分が一生懸命話すのはエネルギーの消耗。<br>
+                        <strong class="text-gold">相手に気持ちよく話してもらって</strong>、あなたはそれを見ながら「お時間いただいてます」って感じでOK。
+                    </p>
+                </div>
+
+                <div class="technique-grid">
+                    <div class="technique-card">
+                        <div style="font-size: 2.5rem;">🪞</div>
+                        <h4>オウム返しは魔法の言葉</h4>
+                        <p style="font-size: 0.9rem;">
+                            相手の言った言葉をそのまま返すだけ。「今日は疲れた」→「疲れちゃったんだね」……それだけで、相手は「理解してくれてる！」って感じてくれるから。</p>
+                    </div>
+
+                    <div class="technique-card">
+                        <div style="font-size: 2.5rem;">💕</div>
+                        <h4>気持ちに寄り添うフレーズ</h4>
+                        <p style="font-size: 0.9rem;">
+                            「それは大変だったね」「よかったね！」って、相手の感情を代わりに言ってあげるだけ。感情を認めてもらえたら、相手はどんどん話してくれる。</p>
+                    </div>
+
+                    <div class="technique-card">
+                        <div style="font-size: 2.5rem;">🔒</div>
+                        <h4>「本当の私」の境界線は守る</h4>
+                        <p style="font-size: 0.9rem;">本名、住所、リアルな悩み。それは大切な「わたし」のもの。画面の向こうの人には<strong>絶対に渡さないで</strong>。
+                        </p>
+                    </div>
+
+                    <div class="technique-card">
+                        <div style="font-size: 2.5rem;">🚫</div>
+                        <h4>嫌な人は即・冷静に対処</h4>
+                        <p style="font-size: 0.9rem;">
+                            不快なことを言われても、怒ったり落ち込んだりしなくていい。システムの一部だと思って、淡々と「ブロック」や「通報」を押すだけ。<strong
+                                class="text-pink">あなたは悪くない。</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="manual-step">
+                <div class="step-header">
+                    <div class="step-number">4</div>
+                    <div class="step-meta">
+                        <h2 class="step-title">自分の心をいたわる</h2>
+                        <span class="step-goal">🎯 燃え尽きない。明日もニコニコできるように</span>
+                    </div>
+                </div>
+
+                <div class="glass-card mb-lg">
+                    <p class="text-center" style="font-size: 1.1rem;">
+                        このお仕事で一番大切なのは、あなたの<strong class="text-gold">「心の元気」を使い切らない</strong>こと。
+                    </p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">⚠️</div>
+                    <div class="tip-content">
+                        <h4>「あと一人だけ……」はNG</h4>
+                        <p>欲を出してダラダラ続けると、結局メンタルが疲れちゃって明日に響く。決めた時間が来たら、どんなに盛り上がってても「おやすみなさい」でさっと終わりにしよう。</p>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">🛁</div>
+                    <div class="tip-content">
+                        <h4>「夜モード」をオフにする儀式</h4>
+                        <p>終わったら、5分ぼーっとしたり、好きな香りの入浴剤でお風呂に入ったり。「お仕事用の自分」をきれいに洗い流して、いつもの自分に戻る時間を作ってね。</p>
+                    </div>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">📊</div>
+                    <div class="tip-content">
+                        <h4>「今日の頑張り」をちょっと記録</h4>
+                        <p>いくら稼げたか、嫌なことはどれくらいなかったか。数字で自分の調子を見ておくと、「あ、今日はちょっと疲れてるから休もう」と冷静に判断できるようになるよ。</p>
+                    </div>
+                </div>
+
+                <!-- Daily Check -->
+                <div class="daily-check">
+                    <h3>💓 今日のわたしチェック（寝る前にかんたんに）</h3>
+
+                    <div class="check-item" onclick="toggleCheck(this)">
+                        <div class="check-box"></div>
+                        <span>「お仕事モード」にうまく切り替えられた？</span>
+                    </div>
+
+                    <div class="check-item" onclick="toggleCheck(this)">
+                        <div class="check-box"></div>
+                        <span>自分がしゃべりすぎず、ラクな姿勢で話せた？</span>
+                    </div>
+
+                    <div class="check-item" onclick="toggleCheck(this)">
+                        <div class="check-box"></div>
+                        <span>嫌な人を「システムエラー」として流せた？</span>
+                    </div>
+
+                    <div class="check-item" onclick="toggleCheck(this)">
+                        <div class="check-box"></div>
+                        <span>決めた時間でやめて、自分を労わる時間を取れた？</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Message -->
+            <div class="final-message">
+                <h3>最後に、これだけは忘れないで</h3>
+                <p class="mb-md">
+                    あなたは自分を売ってるんじゃなくて、<br>
+                    <strong class="text-pink">「ほっとする時間」というサービスを提供してるだけ</strong>。
+                </p>
+                <p>
+                    もし心がちょっと痛んだら、それは「心のアラーム」が鳴ってるんだって思って。<br>
+                    すぐにスマホやパソコンの電源を切って、<strong class="text-gold">ゆっくり休んでいいんだよ</strong>。
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Navigation -->
+    <section class="section">
+        <div class="container">
+            <div class="glass-card text-center" style="max-width: 700px; margin: 0 auto;">
+                <p class="mb-md">他のページも見てみる</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="protection.html" class="btn btn-secondary">安心サポート</a>
+                    <a href="start.html" class="btn btn-ghost">はじめ方ガイド</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo">よるのおはなしワーク</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 よるのおはなしワーク. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Stars Animation
+        function createStars() {
+            const container = document.getElementById('stars');
+            const starCount = 100;
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(star);
+            }
+        }
+        createStars();
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        navToggle.addEventListener('click', () => nav.classList.toggle('open'));
+
+        // Daily Check Toggle
+        function toggleCheck(item) {
+            item.classList.toggle('checked');
+        }
+    </script>
+</body>
+
+</html>

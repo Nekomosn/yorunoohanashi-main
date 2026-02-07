@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="よるのおはなしワーク - 心理的安全性に基づいた低負荷型リモートコミュニケーション。自分のペースで、自室から社会と繋がれる新しい働き方。">
+    <title>よるのおはなしワーク | 自分らしく、夜に咲く</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Stars Background -->
+    <div class="stars-container" id="stars"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">よるのおはなしワーク</a>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="active">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">よるのおはなしワーク</h1>
+                <p class="hero-subtitle">自分らしく、夜に咲く</p>
+                <p class="hero-description">
+                    心理的安全性を大切にした、低負荷型リモートコミュニケーション。<br>
+                    自室という安全な場所から、自分のペースで社会と繋がれる。<br>
+                    あなたらしい働き方を、ここから始めませんか。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#diagnosis" class="btn btn-primary">適性診断をはじめる</a>
+                    <a href="about.html" class="btn btn-secondary">もっと詳しく</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FEATURES</span>
+                <h2 class="section-title">あなたを守る3つの価値</h2>
+                <p class="section-subtitle">無理せず、自分を大切にしながら、一歩ずつ進む</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3 class="feature-title">心理的レジリエンス</h3>
+                    <p>「持続可能なペースでの活動」を推奨。過度な努力による燃え尽きを防ぎ、自己受容を促します。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">プロの境界線</h3>
+                    <p>感情労働における役割理論を適用。クライアントとの適切な心理的距離を保つ技術をお伝えします。</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">スモールステップ</h3>
+                    <p>段階的な社会参加のステップとして。在宅で低負荷な環境から自己効力感を高めていきます。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnosis Section -->
+    <section class="section" id="diagnosis">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">PERSONALIZED</span>
+                <h2 class="section-title">あなたに合ったスタイルを見つける</h2>
+                <p class="section-subtitle">5つの質問で、最もマインドフルに活動できるスタイルをご提案します</p>
+            </div>
+
+            <div class="diagnosis-container">
+                <div class="glass-card">
+                    <!-- Progress -->
+                    <div class="diagnosis-progress">
+                        <span class="progress-dot active" data-step="1"></span>
+                        <span class="progress-dot" data-step="2"></span>
+                        <span class="progress-dot" data-step="3"></span>
+                        <span class="progress-dot" data-step="4"></span>
+                        <span class="progress-dot" data-step="5"></span>
+                    </div>
+
+                    <!-- Questions -->
+                    <div id="diagnosisQuestions">
+                        <!-- Q1 -->
+                        <div class="diagnosis-question active" data-question="1">
+                            <h3 class="text-center">Q1. 今、お金を稼ぎたい一番の理由は？</h3>
+                            <div class="diagnosis-options">
+                                <div class="diagnosis-option" data-type="A" data-value="1">
+                                    <strong>推し活・趣味のため</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">好きなものにお金を使いたい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="B" data-value="1">
+                                    <strong>自己投資・キャリアアップのため</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">スキルや見た目を磨きたい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="C" data-value="1">
+                                    <strong>生活のため・社会との接点として</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">無理なく収入を得たい</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q2 -->
+                        <div class="diagnosis-question" data-question="2">
+                            <h3 class="text-center">Q2. 人と話すことについてどう感じる？</h3>
+                            <div class="diagnosis-options">
+                                <div class="diagnosis-option" data-type="A" data-value="2">
+                                    <strong>好きな話題なら楽しい</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">興味のあることは熱く語れる</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="B" data-value="2">
+                                    <strong>目的があれば大丈夫</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">仕事としてなら割り切れる</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="C" data-value="2">
+                                    <strong>できれば最小限にしたい</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">負担にならない程度がいい</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3 -->
+                        <div class="diagnosis-question" data-question="3">
+                            <h3 class="text-center">Q3. 理想的な働く時間は？</h3>
+                            <div class="diagnosis-options">
+                                <div class="diagnosis-option" data-type="A" data-value="3">
+                                    <strong>目標達成まで集中型</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">短期間でガッと稼ぎたい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="B" data-value="3">
+                                    <strong>計画的にコツコツ</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">継続的に安定収入を得たい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="C" data-value="3">
+                                    <strong>気分や体調に合わせて</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">無理のない範囲でマイペースに</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q4 -->
+                        <div class="diagnosis-question" data-question="4">
+                            <h3 class="text-center">Q4. ストレスを感じやすい状況は？</h3>
+                            <div class="diagnosis-options">
+                                <div class="diagnosis-option" data-type="A" data-value="4">
+                                    <strong>退屈なこと・興味がないこと</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">やりがいがないと辛い</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="B" data-value="4">
+                                    <strong>成長を感じられないこと</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">スキルアップしたい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="C" data-value="4">
+                                    <strong>過剰な刺激・プレッシャー</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">静かで穏やかがいい</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q5 -->
+                        <div class="diagnosis-question" data-question="5">
+                            <h3 class="text-center">Q5. このサービスに期待することは？</h3>
+                            <div class="diagnosis-options">
+                                <div class="diagnosis-option" data-type="A" data-value="5">
+                                    <strong>効率よく稼いで目標達成</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">具体的なゴールがある</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="B" data-value="5">
+                                    <strong>スキルを活かして成長したい</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">経験を積みたい</p>
+                                </div>
+                                <div class="diagnosis-option" data-type="C" data-value="5">
+                                    <strong>安心できる環境で少しずつ</strong>
+                                    <p class="mt-sm" style="font-size: 0.9rem; opacity: 0.8;">無理なく社会と繋がりたい</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results (Hidden initially) -->
+                    <div id="diagnosisResult" style="display: none;">
+                        <!-- Result A - 推し活タイプ → BBchatTV -->
+                        <div class="result-card" data-result="A" style="display: none;">
+                            <span class="result-type">TYPE A</span>
+                            <h3 class="result-title">目標追求型</h3>
+                            <p class="mb-md">あなたは明確な目標に向かって集中できるタイプ。<br>推し活や趣味など、達成したいゴールがあるからこそ頑張れます。</p>
+                            <p class="mb-md" style="opacity: 0.9;">
+                                <strong class="text-gold">おすすめスタイル：</strong><br>
+                                短期集中型プロジェクト。目標金額を設定し、達成したら休息。メリハリのある働き方が合っています。
+                            </p>
+
+                            <!-- Affiliate CTA: BBchatTV -->
+                            <div
+                                style="background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.15)); border: 1px solid var(--color-champagne-gold); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; text-align: left;">
+                                <p
+                                    style="color: var(--color-champagne-gold); font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                    ✨ あなたにぴったりのワーク</p>
+                                <h4 style="color: var(--color-dusty-pink); margin-bottom: 0.75rem;">
+                                    1時間後にはお財布が潤う。即レス・即払いコース</h4>
+                                <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                    <strong>推しは待ってくれないから。</strong><br>
+                                    働いたその瞬間に報酬が確定し、<span class="text-gold">最短1時間後には手元に</span>。<br>
+                                    あなたの情熱を止めない働き方。
+                                </p>
+                                <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 1rem;">
+                                    🏆 20周年の老舗サイトだから安心感も抜群
+                                </p>
+                                <a href="#" class="btn btn-primary" style="width: 100%;"
+                                    onclick="alert('アフィリエイトリンク：BBchatTV')">
+                                    今夜の頑張りを、1時間後にはご褒美に変える
+                                </a>
+                            </div>
+
+                            <a href="manual.html" class="btn btn-ghost" style="margin-top: 0.5rem;">稼働マニュアルを見る</a>
+                        </div>
+
+                        <!-- Result B - 自己投資タイプ → ジュエル -->
+                        <div class="result-card" data-result="B" style="display: none;">
+                            <span class="result-type">TYPE B</span>
+                            <h3 class="result-title">自己投資型</h3>
+                            <p class="mb-md">あなたは成長とスキルアップを重視するタイプ。<br>コミュニケーション力を磨きながら、自己ブランディングにも活かせます。</p>
+                            <p class="mb-md" style="opacity: 0.9;">
+                                <strong class="text-gold">おすすめスタイル：</strong><br>
+                                計画的な継続型。対人スキルを磨きながら安定収入を得て、次のステップへの投資に。
+                            </p>
+
+                            <!-- Affiliate CTA: ジュエル -->
+                            <div
+                                style="background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.15)); border: 2px solid var(--color-champagne-gold); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; text-align: left; position: relative; overflow: hidden;">
+                                <div
+                                    style="position: absolute; top: 0; right: 0; background: var(--color-champagne-gold); color: var(--color-midnight-blue-dark); padding: 0.25rem 1rem; font-size: 0.75rem; font-weight: bold; border-bottom-left-radius: 8px;">
+                                    殿堂入り</div>
+                                <p
+                                    style="color: var(--color-champagne-gold); font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                    👑 神サポート認定ワーク</p>
+                                <h4 style="color: var(--color-dusty-pink); margin-bottom: 0.75rem;">
+                                    短期集中で、まずはまとまったお金のベースを。高還元50%固定コース</h4>
+                                <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                    最初から<span class="text-gold">業界トップクラスの報酬率50%</span>でスタート。<br>
+                                    無駄な努力をせず、最短距離で目標額を達成しましょう。
+                                </p>
+                                <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 1rem;">
+                                    💎 プロ仕様の手厚い新人サポート体制
+                                </p>
+                                <a href="#" class="btn btn-primary" style="width: 100%;"
+                                    onclick="alert('アフィリエイトリンク：ジュエル')">
+                                    プロ仕様のサポート環境を確認して、スタート特典を受け取る
+                                </a>
+                            </div>
+
+                            <a href="manual.html" class="btn btn-ghost" style="margin-top: 0.5rem;">稼働マニュアルを見る</a>
+                        </div>
+
+                        <!-- Result C - 在宅ワークタイプ → クリスタル -->
+                        <div class="result-card" data-result="C" style="display: none;">
+                            <span class="result-type">TYPE C</span>
+                            <h3 class="result-title">環境適応型</h3>
+                            <p class="mb-md">あなたは心地よさと安心を大切にするタイプ。<br>自分のペースを守りながら、無理なく社会と繋がることを重視しています。</p>
+                            <p class="mb-md" style="opacity: 0.9;">
+                                <strong class="text-gold">おすすめスタイル：</strong><br>
+                                低負荷マイペース型。体調や気分に合わせて調整可能。安全な自室から、段階的に社会参加。
+                            </p>
+
+                            <!-- Affiliate CTA: クリスタル -->
+                            <div
+                                style="background: linear-gradient(135deg, rgba(212, 165, 165, 0.2), rgba(212, 175, 55, 0.15)); border: 1px solid var(--color-champagne-gold); border-radius: 16px; padding: 1.5rem; margin: 1.5rem 0; text-align: left;">
+                                <p
+                                    style="color: var(--color-champagne-gold); font-size: 0.85rem; margin-bottom: 0.5rem;">
+                                    🛡️ あなたを守るワーク</p>
+                                <h4 style="color: var(--color-dusty-pink); margin-bottom: 0.75rem;">
+                                    顔出し不要、バーチャルで自分を守る。完全プライバシー保護コース</h4>
+                                <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                                    <strong>アバターで別人格になれば、ここは完全な聖域。</strong><br>
+                                    <span class="text-gold">バーチャルアバター無償制作</span>で、正体を知られる心配ゼロ。<br>
+                                    FANZA等の大手サイトと提携で安心感も最大級です。
+                                </p>
+                                <p style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 1rem;">
+                                    ✨ 最大還元率61%で長期安定収入
+                                </p>
+                                <a href="#" class="btn btn-primary" style="width: 100%;"
+                                    onclick="alert('アフィリエイトリンク：クリスタル')">
+                                    自分専用の『アバター』で、安全におはなしを始める
+                                </a>
+                            </div>
+
+                            <a href="manual.html" class="btn btn-ghost" style="margin-top: 0.5rem;">稼働マニュアルを見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="glass-card text-center" style="max-width: 800px; margin: 0 auto;">
+                <h2 class="mb-md">あなたのペースで、はじめよう</h2>
+                <p class="mb-lg">無理なく、自分を大切にしながら。<br>夜の静けさの中で、新しい一歩を踏み出してみませんか。</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="about.html" class="btn btn-secondary">サービスを詳しく見る</a>
+                    <a href="protection.html" class="btn btn-ghost">安心サポートについて</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <span class="logo">よるのおはなしワーク</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">ホーム</a>
+                <a href="about.html">サービス詳細</a>
+                <a href="protection.html">安心サポート</a>
+                <a href="start.html">はじめ方</a>
+                <a href="manual.html">稼働マニュアル</a>
+                <a href="tax.html">税金について</a>
+                <a href="/blog/">📝 ブログ</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 よるのおはなしワーク. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Stars Animation
+        function createStars() {
+            const container = document.getElementById('stars');
+            const starCount = 100;
+
+            for (let i = 0; i < starCount; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(star);
+            }
+        }
+        createStars();
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+
+        // Diagnosis Logic
+        const scores = { A: 0, B: 0, C: 0 };
+        const totalQuestions = 5;
+        let answeredQuestions = 0;
+
+        document.querySelectorAll('.diagnosis-option').forEach(option => {
+            option.addEventListener('click', function () {
+                const question = this.closest('.diagnosis-question');
+                const questionNum = parseInt(question.dataset.question);
+                const type = this.dataset.type;
+
+                // Remove previous selection in this question
+                question.querySelectorAll('.diagnosis-option').forEach(opt => {
+                    if (opt.classList.contains('selected')) {
+                        const prevType = opt.dataset.type;
+                        scores[prevType]--;
+                    }
+                    opt.classList.remove('selected');
+                });
+
+                // Add new selection
+                this.classList.add('selected');
+                scores[type]++;
+
+                // Update progress
+                const progressDots = document.querySelectorAll('.progress-dot');
+                progressDots[questionNum - 1].classList.add('completed');
+
+                // Auto advance after delay
+                setTimeout(() => {
+                    if (questionNum < totalQuestions) {
+                        // Go to next question
+                        question.classList.remove('active');
+                        const nextQuestion = document.querySelector(`[data-question="${questionNum + 1}"]`);
+                        nextQuestion.classList.add('active');
+                        progressDots[questionNum].classList.add('active');
+                    } else {
+                        // Show result
+                        showResult();
+                    }
+                }, 500);
+            });
+        });
+
+        function showResult() {
+            // Determine winner
+            let maxType = 'A';
+            let maxScore = scores.A;
+
+            if (scores.B > maxScore) {
+                maxType = 'B';
+                maxScore = scores.B;
+            }
+            if (scores.C > maxScore) {
+                maxType = 'C';
+            }
+
+            // Hide questions, show result
+            document.getElementById('diagnosisQuestions').style.display = 'none';
+            document.querySelector('.diagnosis-progress').style.display = 'none';
+
+            const resultContainer = document.getElementById('diagnosisResult');
+            resultContainer.style.display = 'block';
+
+            const resultCard = document.querySelector(`[data-result="${maxType}"]`);
+            resultCard.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
